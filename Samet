@@ -1,11 +1,4 @@
---[[
-    Made by samet
-
-    Assign different flags to each element to prevent from configs overriding eachother
-    Example script is at the bottom
-
-    Documentation:
-    function Library:Window(Data: table
+function Library:Window(Data: table
         Name/name: string,
         Size/size: UDim2
     )
@@ -4895,3 +4888,6 @@ local Library do
         return Listbox
     end
 end
+
+getgenv().Library = Library
+return Library
